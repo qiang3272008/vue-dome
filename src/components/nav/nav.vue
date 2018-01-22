@@ -1,6 +1,5 @@
 <template>
   <el-row class="container">
-    {{$router.options}}
     <el-col :span="24" class="main">
       <!--导航菜单-->
       <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose" @select="handleselect"

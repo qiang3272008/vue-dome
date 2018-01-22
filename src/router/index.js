@@ -7,6 +7,8 @@ import seller from '../pages/seller/seller.vue'
 
 Vue.use(Router)
 
+
+
 export default new Router({
   routes: [
     {
@@ -15,7 +17,6 @@ export default new Router({
       name: '导航一',
       iconCls: 'el-icon-message',//图标样式class
       children: [
-        { path: '/goods', component: goods, name: '001'},
         { path: '/ratings', component: ratings, name: '002' },
         { path: '/seller', component: seller, name: '003' },
       ]
