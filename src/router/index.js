@@ -21,16 +21,6 @@ export default new Router({
         { path: '/seller', component: seller, name: '003' },
       ]
     },
-    {
-      path: '/',
-      component: goods,
-      name: '导航二',
-      iconCls: 'el-icon-message',
-      children: [
-        { path: '/goods', component: goods, name: '001'},
-        { path: '/ratings', component: ratings, name: '002' },
-        { path: '/seller', component: seller, name: '003' },
-      ]
-    }
+
   ]
 })
