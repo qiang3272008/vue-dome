@@ -4,23 +4,26 @@ import goods from '../pages/goods/goods.vue'
 import ratings from '../pages/ratings/ratings.vue'
 import seller from '../pages/seller/seller.vue'
 
-
 Vue.use(Router)
-
 
 
 export default new Router({
   routes: [
     {
       path: '/',
-      component: goods,
-      name: '导航一',
-      iconCls: 'el-icon-message',//图标样式class
-      children: [
-        { path: '/ratings', component: ratings, name: '002' },
-        { path: '/seller', component: seller, name: '003' },
-      ]
+      redirect: '/goods'
     },
-
+    {
+      path: '/goods',
+      component: goods
+    },
+    {
+      path: '/ratings',
+      component: ratings
+    },
+    {
+      path: '/seller',
+      component: seller
+    }
   ]
 })

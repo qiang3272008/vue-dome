@@ -49,5 +49,8 @@ export default {
       display flex
       .content-left
         flex 0 0 200px
+        background #545C64
+      .content-right
+        flex 1
 </style>
 
