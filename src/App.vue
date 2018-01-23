@@ -52,5 +52,6 @@ export default {
         background #545C64
       .content-right
         flex 1
+        overflow scroll
 </style>
 

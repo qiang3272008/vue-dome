@@ -2,8 +2,9 @@
  使用mockjs来模拟数据接口
  */
 import Mock from 'mockjs'
+
 let data = Mock.mock({
-  'goods|5': [{
+  'goods|50': [{
     'id|+1': 1,
     //出生年月
     'date': '@date("yyyy-MM-dd")',
@@ -35,6 +36,9 @@ Mock.mock('/api/seller', {
   code: 0,
   data: data.seller
 })
+
+
+
 
 //只需要让当前文件被执行一次即可
 
